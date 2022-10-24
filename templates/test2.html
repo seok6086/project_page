@@ -63,14 +63,14 @@
         font-size: 25px;
     }
 
-    /*프로필버튼*/
+    /*프로필버튼 마이페이지 이동 */
     .profile {
         overflow: hidden;
         float: right;
         width: 135px;
         height: 135px;
-        border-radius: 350px;
-        border: 0;
+        border-radius: 100%;
+        border:none;
 
 
     }
@@ -136,9 +136,10 @@
     /*게시물*/
     .post {
         float: left;
-        margin-right: 0px;
-        margin-left:150px;
-        margin-top:10px;
+        margin-right: 2%;
+        margin-left: 8%;
+        margin-top:15px;
+        margin-bottom: 15px;
         display: flex;
         flex-wrap:wrap;
 
@@ -187,13 +188,13 @@
                     let temp_post = `<div id="post" class="post">
                                     <div class="card">
                                 <div class="postimg">
-                                    <img class="card-img-top" type="button" src="https://idsn.co.kr/news/data/20211109/p179525852615648_495.jpg"
+                                    <img class="card-img-top" type="button" src="https://img.gqkorea.co.kr/gq/2017/02/style_58b4f11aa0b54.jpg"
                                           alt="...">  </div>
                                 <div class="card-body">
                                     <h5 class="card-title">${id}</h5>
-                                    <button class="like">♡️</button>
+                                    <button class="like">♡️<h9>47</h9></button>
                                     <p class="card-text">${text}</p>
-                                    <p class="card-text">     </p>
+                                    <p class="card-text">  #태그자리   </p>
                                 </div></div></div>
                             `
                     $('#post').append(temp_post)
@@ -220,10 +221,10 @@
     </div>
     <!--유저아이디 및 프로필-->
     <div>
-        <h1 class="userid"> winter_01 </h1> <!--유저 아이디-->
-        <!-- 마이페이지 이동-->
+        <h1 class="userid"> User_ID </h1> <!--유저 아이디 로그인테스트해야함-->
+        <!-- 마이페이지 경로 확정 후 테스트 이동-->
         <button onclick="location.href='test.html'" class="profile" type="button"><img class="profile-photo"
-                                                                                       src="https://cdn.imweb.me/thumbnail/20220724/51a5a25fe9487.jpg">
+                                                                                       src="https://newsimg.sedaily.com/2020/11/24/1ZAJ728KBG_1.jpg">
             <!--프로필-->
         </button>
     </div>
